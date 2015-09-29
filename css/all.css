@@ -1,0 +1,57 @@
+body {
+    font-family: Helvatica, Arial, 'Microsoft JhengHei';
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.loading{
+    margin-bottom: 20px;
+}
+
+th, .time, .district{
+    white-space: nowrap;
+}
+
+select{
+    margin: 20px 0;
+}
+
+.complete span{
+    display: none;
+}
+
+.complete span.label-success, .complete span.label-danger{
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .col-sm-6:nth-child(2n+1) {
+        clear: left;
+    }
+    .pic {
+        height: 180px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-sm-6:nth-child(2n+1) {
+        clear: none;
+    }
+    .col-md-4:nth-child(3n+1) {
+        clear: both;
+    }
+    .pic {
+        height: 180px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-md-4:nth-child(3n+1) {
+        clear: none;
+    }
+    .col-lg-3:nth-child(4n+1) {
+        clear: both;
+    }
+}
