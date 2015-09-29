@@ -46,8 +46,8 @@
                         <thead>
                             <tr>
                                 <th>發生時間</th>
-                                <th>區域</th>
-                                <th>災情類別</th>
+                                <th class="hidden-xs">區域</th>
+                                <th class="hidden-xs">災情類別</th>
                                 <th>詳細位置</th>
                                 <th>事件敘述</th>
                                 <th>是否解決</th>
@@ -56,10 +56,10 @@
                         <tbody>
                             <tr ng-repeat="x in listDisaster | filter:area | filter:category | limitTo:100">
                                 <td class="time">{{ x.CaseTime[0] }}</td>
-                                <td class="district">
+                                <td class="district hidden-xs">
                                     <span class="label label-primary">{{ x.CaseLocationDistrict[0] }}</span>
                                 </td>
-                                <td class="category">
+                                <td class="category hidden-xs">
                                     <span class="label label-warning">{{ x.PName[0] }}</span>
                                 </td>
                                 <td class="location">{{ x.CaseLocationDescription[0] }}</td>
